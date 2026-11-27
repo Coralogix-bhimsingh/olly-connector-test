@@ -1,7 +1,7 @@
 {
   "name": "Teleport - Multiple Failed Logins For an Account",
   "priority": "P3",
-  "threshold": 5,
+  "threshold": 10,
   "window_minutes": 10,
   "group_by": "cx_security.username",
   "query": "cx_security.event_name:\"user.login\" AND cx_security.event_result:\"failure\" AND _exists_:cx_security.username"
