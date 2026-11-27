@@ -1,0 +1,8 @@
+{
+  "name": "Teleport - Successful Local Login Bypassing SSO",
+  "priority": "P2",
+  "threshold": 1,
+  "window_minutes": 5,
+  "group_by": "cx_security.username",
+  "query": "cx_security.event_name:\"user.login\" AND cx_security.event_result:\"success\" AND method:\"local\""
+}
